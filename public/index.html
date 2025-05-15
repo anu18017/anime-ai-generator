@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Anime AI Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Anime AI Generator</h1>
+  <button id="google-login">Sign in with Google</button>
+  <div id="user-info" style="display: none;">
+    <p id="user-name"></p>
+    <p id="credit-info"></p>
+    <button id="logout">Log out</button>
+  </div>
+  <div id="generator" style="margin-top: 30px;">
+    <input id="prompt" type="text" placeholder="Describe your anime scene..." style="width: 60%; padding: 10px;" />
+    <button id="generate">Generate Image</button>
+    <div id="loading" style="display:none; margin-top:10px;"><p>Generating image...</p></div>
+    <div id="output" style="margin-top: 20px;"></div>
+  </div>
+</body>
+</html>
